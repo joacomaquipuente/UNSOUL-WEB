@@ -1,0 +1,437 @@
+*{
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: black;
+    
+    
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+.fondo{
+  background-image: url(./assets/imagenes/fondos/UNSOUL\ FONDO.png);
+  background-size: 300px auto;
+  animation-name: fondoanimacion;
+  animation-duration: 4s;
+  position: relative;
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navegacion{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.navegacion__item{
+    padding: 0 30px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    transition: all .1s  ease-in-out;
+    animation-name: starttext;
+    animation-duration: 1s;
+}
+.navegacion__item:hover{
+    background-color: rgb(255, 0, 157);
+    font-size: 25px;
+    
+    z-index: 1;
+    
+    
+}
+
+.header{
+   background-image: url(./assets/imagenes/fondos/14092994-de-fibra-de-carbono-textura-de-fondo-patrón-de-limpia.png);
+    height: 90px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+  
+}
+main{
+  
+}
+
+
+
+#logo{
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-style: italic;    
+    transition: all .1s ease-in-out;
+    animation-name: starttext;
+    animation-duration: 1s;
+
+}
+
+@keyframes starttext{
+  0% { font-size: 0px; opacity: 0;}
+  
+}
+
+#logo:hover{
+    font-size: 35px;
+    
+}
+
+.banner{
+    background-image: url(https://static.turbosquid.com/Preview/2019/03/29__22_42_01/RX7V3_01_comped.pngAD6C4DC5-7A98-4AF0-AFEE-252434A9DE0FDefaultHQ.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    animation: banneranimacion 29s infinite;
+    
+
+    width: 100%;
+    height: 700px;
+    --fill-layer-background-media-position: fixed;
+    
+    font-style: italic;
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+    
+    
+}
+
+
+@keyframes banneranimacion {
+  0% {background-image: url(./assets/imagenes/fondos/350zgod2edre.jpg); }
+  15% {background-image: url(./assets/imagenes/fondos/350zgod2edre.jpg); }
+  25% {background-image: url(./assets/imagenes/fondos/RX7V3_01_comped.pngAD6C4DC5-7A98-4AF0-AFEE-252434A9DE0FDefaultHQ.jpg);}
+  40% {background-image: url(assets/imagenes/fondos/RX7V3_01_comped.pngAD6C4DC5-7A98-4AF0-AFEE-252434A9DE0FDefaultHQ.jpg);}
+  50% {background-image: url(./assets/imagenes/fondos/wallpaperbetter\ \(1\)2.jpg);}
+  65% {background-image: url(./assets/imagenes/fondos/wallpaperbetter\ \(1\)2.jpg);}
+  75% {background-image: url(./assets/imagenes/fondos/wallpaperflare.com_wallpaper.jpg);}
+  90% {background-image: url(./assets/imagenes/fondos/wallpaperflare.com_wallpaper.jpg);}
+  100% {background-image: url(./assets/imagenes/fondos/350zgod2edre.jpg);}
+  
+}
+.pink{
+    color: rgb(255, 0, 157);
+    
+    
+}
+
+.banner:before{
+    content: "";
+    width: 100%;
+    height: 700px;
+    position: absolute;
+
+    background-image: linear-gradient(rgb(255, 0, 157), white);
+    opacity: 0.4; 
+    
+    
+  }
+  .banner::after{
+    content: "";
+    width: 100%;
+    height: 700px;
+    position: absolute;
+
+    background-image: linear-gradient(black, black);
+    opacity: 0; 
+    animation-name: bannerstart;
+    animation-duration: 5s;
+    z-index: 0;
+    
+  }
+  @keyframes bannerstart{
+    0% { background-image: linear-gradient(black, black); opacity: 1;}
+    
+    }
+  
+
+  
+    
+  
+
+  .logobanner{
+    
+    z-index: 1;
+    text-align: center;
+    opacity: 1;
+   
+    animation-name: logobannerstart;
+    animation-duration: 1s;
+    
+    
+    
+  }
+  @keyframes logobannerstart{
+    0% {font-size: 70%; opacity: 0;}
+    
+  }
+
+
+ .eslogan{
+    
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 5px;
+    bottom: 30px;
+    
+    font-style: italic;
+    animation-name: esloganstart;
+    animation-duration: 5s;
+    
+    
+ }
+ @keyframes esloganstart{
+  0% { letter-spacing: 50px; opacity: 0;}
+  30% { letter-spacing: 50px; opacity: 0;}
+ }
+
+  .contenedor{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  .bodykit{
+
+    
+  }
+  .contenido{
+    margin: 20px;
+  }
+
+  .informacion{
+    width: 50%;
+  }
+    
+  .informacion__video{ }
+
+
+
+
+  .footer{
+    background-image: url(./assets/imagenes/fondos/14092994-de-fibra-de-carbono-textura-de-fondo-patrón-de-limpia.png);
+    width: 100%;
+    height: 140px;
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+  }
+
+
+
+
+
+
+
+
+  .redes{
+    
+    filter: invert();
+    display: flex;
+    align-items: center;
+   
+    
+
+    
+  }
+
+  .redes-item{
+    width: 80px;
+    height: auto;
+    margin: 0 20px;
+    transition: all .1s  ease-in-out;
+    
+    
+    
+    
+  
+    
+    
+
+  }
+
+  .redes-item:hover{
+    width: 100px;
+    height: auto;
+  }
+    
+
+  .titulos{
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  .tituloide{
+    display: inline-block;
+    position: relative;
+    animation-name: tituloides;
+    animation-duration: 2s;
+  }
+  @keyframes tituloides {
+    0% {transform: rotateX(90deg); font-size: 70px;opacity: 0;}
+    100% {transform: rotateX(720deg);}
+    
+  }
+  .tituloide::after,.tituloide::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: rgb(255, 0, 157);
+    z-index: 4;
+    top: 0.75em;
+    
+  }
+  .tituloide::before{
+    left: -240px;
+    animation-name: leftbar ;
+    animation-duration: 2s;
+  }
+  .tituloide::after{
+    right: -240px;
+    animation-name: rigthbar ;
+    animation-duration: 2s;
+  }
+
+
+  @keyframes leftbar {
+    0% { left: -600px ; opacity: 0;}
+    
+    
+  }
+  @keyframes rigthbar {
+    0% { right: -600px; opacity: 0; transform: ;}
+
+    
+    
+  }
+
+
+  
+
+.grid-container{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+.bodykit{
+  background-image: linear-gradient( rgb(151, 0, 93),  rgb(255, 0, 157) );
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all .3s  ease-in-out;
+  
+  margin: 20px;
+  padding: 10px 10px;
+  animation-name: producto;
+  animation-duration: 2s;
+  
+  
+}
+.bodykit:hover{
+ background-image: linear-gradient(rgb(255, 23, 166), rgb(255, 125, 205));
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes producto {
+  0% {margin: 20px 60px; opacity: 0; ;}
+  
+}
+.bodykit-imagen{
+  width: 100%;
+  
+}
+
+.contenedor-titulos{
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (min-widht: 1000px){
+  body{ 
+    font-size: 10px;
+  }
+}
